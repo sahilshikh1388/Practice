@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .main {
+            display: flex;
+            height: 700px;
+            width: 100%;
+            border: 2px solid red;
+            align-items: center;
+            justify-content: center;
+            background-color: #b7b4c4;
+
+        }
+
+        .info {
+            margin: 20px;
+            width: 500px;
+            height: 600px;
+            background-color: white; align-items: center;
+        }
+
+        #heading {
+            text-align: center;
+            font-size: 25px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 20px;
+            margin: 20px;
+        }
+        .edit1{
+            border: 1px solid black;
+            box-shadow: 5px 10px 5px rgb(110, 105, 105);
+            height: 25rem;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: 70%;
+            position: relative;
+            left: 70px;
+        }
+        .inputdiv input{
+            width: 70%;
+            height: 50px;
+            margin: 20px;
+            box-shadow: #a6d5ee;
+        }
+        #div1 input{
+            font-size: 20px;
+            border-radius: 5px;
+        }
+        #div2 input{
+            font-size: 20px;
+            border-radius: 5px;
+
+        }
+        #button input{
+            background-color: #a6d5ee;
+            font-size:20px;
+            border: none;
+       }   
+       #button input:hover{
+        background-color: #719bb3;
+        font-size:21px ;
+        border-radius: 5px;
+       }
+       .createAC{
+        font-size: 20px;
+        margin: 20px;
+       }
+         </style>
+</head>
+
+<body>
+    <header>
+        <form actiona="action.php" method="post">
+        <div class="main">
+            <div class="info">
+                <div id="heading">
+                    <h1>Login</h1>
+                </div>
+                <div class="edit1">
+                    <div class="inputdiv" id="div1">
+                        <input type="text" name="name" placeholder="Username" required>
+                    </div>
+                    <div class="inputdiv" id="div2">
+
+                        <input type="email" name="email" placeholder="Email Address">
+                    </div>
+                    <div class="inputdiv" id="button">
+                        <input type="submit" name="submit" value="LOGIN">
+                    </div>
+                    <div class="createAC">
+                        <p>
+                            Not a member?<a href=" #">Create Account</a>
+                        </p>                        
+                    </div>
+                </div>
+            </div>
+        </form>
+    </header>
+
+</body>
+
+</html>
